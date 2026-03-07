@@ -1,0 +1,39 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 90%;
+    background: #ccc;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.container p{
+    font-size: 50px;
+}
+
+#fundo-cor{
+    background-color: red;
+    padding: 50px;
+    text-align: center;
+}
+
+#fundo-imagem{
+    background-image: url(../img/montanha123.jpg);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
