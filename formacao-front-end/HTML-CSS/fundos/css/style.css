@@ -34,6 +34,36 @@
     background-size: cover;
 }
 
+.fundo-texto{
+    background: #00000061;
+    padding: 20px;
+    color: #fff;
+}
+
+
+.fundo-imagem2{
+    background-image:linear-gradient(rgba(15,96,163,0.70),
+    rgba(40,210,225,0.2)), url(../img/montanha123.jpg);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo-texto2{    
+    color: #fff;
+}
+
+.fundo-imagem-fixo{
+   
+    background-attachment: fixed;
+}
+
+
 
 
 
