@@ -3,8 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, Helvetica, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+
+/* Padrão */
+
+.btn-primary {
+    background: #1b5e20;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #2d8333;
+    transform: translateY(2px);
+}
+
 
 /* NAVBAR */
 
@@ -13,11 +31,17 @@
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem 8%;
+    /* Ajustar sombra */
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
     font-size: 1.5rem;
     color: black;
+    font-weight: 800;
+    
 }
 
 .logo span {
@@ -36,13 +60,174 @@
     gap: 25px;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: black;
-    font-weight: 500;    
+    font-weight: 500;
 }
 
-.nav-auth{
+.nav-auth {
     display: flex;
     gap: 15px;
+}
+
+
+
+
+
+/* Hero e Busca */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+        url('../image/banner.avif');
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+
+}
+
+.search-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    color: #333;
+}
+
+.search-input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input-group label {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.search-input-group input {
+    border: none;
+    border-bottom: 2px solid #eee;
+    padding: 8px 5px;
+    font-size: 1rem;
+    width: 180px;
+    outline: none;
+}
+
+#btnSearch {
+    background: #ffa000;
+    border-radius: 8px;
+    padding: 15px 30px;
+    border: none;
+}
+
+
+/* Categorias e Destinos */
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 3rem 5%;
+}
+
+.cat-item {
+    color: #888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cat-item i {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.cat-item i:hover {
+    color: #2d8333;
+}
+
+.destination {
+    padding: 4rem 8%;
+    background: #f9f9f9;
+}
+
+.section-header {
+    margin-bottom: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #1b5e20;
+}
+
+/* Quebra de layout */
+.why-us {
+    display: flex;
+    gap: 80px;
+    padding: 5rem 8%;
+    color: #fff;
+    background: #1b5e20;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit h3 {
+    margin-bottom: 15px;
+}
+
+.benefit i{
+    font-size: 30px;
+    margin-bottom: 15px;
 }
