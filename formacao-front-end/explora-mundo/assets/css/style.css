@@ -43,6 +43,7 @@ html {
     /* Ajustar sombra */
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 .logo {
@@ -465,14 +466,16 @@ aside h2 {
 
 
 .container-btn-destination{
-        padding-top: 51px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
 
+/* Destinos */
+
 .destinations {   
     padding: 130px 8% 0 8%;
-     background: #1b5e20;
+    background: #1b5e20;
 }
 
 .destinations h2{
