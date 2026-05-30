@@ -30,7 +30,7 @@ header{
 
 .card{
     flex: 1;
-    background: #f4f4f4;
+    background: var(--cor-principal);
     padding: var(--espacamento);
     border-radius:12px;
 }

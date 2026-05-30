@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+
+<body>
+    <script>
+        let idade = 16;
+        let cnh = false;
+
+        if (idade >= 18) {
+            console.log('Voce pode dirigir');
+        } else {
+            console.log('Voce não pode dirigir');
+        }
+
+        console.log('---fim---');
+
+        if (idade >= 18) {
+            if (cnh == true) {
+                console.log('Voce é maior de idade e tem cnh e pode dirigir')
+            } else {
+                console.log('Voce é maior de idade mas não tem cnh e não pode dirigir')
+            }
+        } else {
+            console.log('Voce é menor de idade e não pode dirigir');
+        }
+
+        let nota = 4;
+        if (nota >= 7) {
+            console.log('Aprovado')
+        } else if (nota >= 5) {
+            console.log('Recuperação')
+        } else {
+            console.log('Reprovado')
+        }
+
+        // atividade 
+
+        // nota1
+        // nota2
+        // nota3
+        // calculo da media
+
+        // media >= 7 (aprovado)
+        // media >= 5 (recuperacao)
+        // se nada for verdadiro (reprovado)
+
+        let nota1 = parseInt(prompt('Digite a primeira nota'))
+        let nota2 = parseInt(prompt('Digite a segunda nota'))
+        let nota3 = parseInt(prompt('Digite a terceira nota'))
+
+        let media = (nota1 + nota2 + nota3) / 3
+
+        if (media >= 7) {
+            console.log('Aprovado')
+        } else if (media >= 5) {
+            console.log('Recuperação')
+        } else {
+            console.log('Reprovado')
+        }
+
+        // atividade 
+        // Número positivo ou negativo
+        // Peça ao usuário um número e diga se ele é positivo ou negativo. 
+        // O número é positivo 
+        // O número é negativo.
+        // se for zero é um numero neutro
+
+        let num = prompt("Digite um numero positivo ou negativo ");
+
+        if (num < 0) {
+            console.log('O numero digitado é negativo')
+        } else if (num > 0) {
+            console.log('O numero é positivo')
+        } else {
+            console.log('O numero foi zero e zero é um numero neutro')
+        }
+
+        // atividade 
+        // Par ou ímpar
+        // Peça um número e informe se ele é par ou ímpar.
+        // O número é par.
+        // O número é ímpar.
+        // se for zero é um numero neutro par e neutro
+
+        let numero = parseInt(prompt('Digite um numero'))
+
+
+        if (numero % 2 === 0) {
+            console.log('O numero é par')
+            if (numero === 0) {
+                console.log('zero é um numero neutro ')
+            }
+        } else {
+            console.log('O numero é par')
+        }
+
+        // atividade 
+        // Maior Número com Empate
+        // Solicite três números e informe qual é o maior.
+        // Se houver empate entre dois ou mais números, avise ao usuário.
+
+        let n1 = parseInt(prompt('Digite o primeiro numero'))
+        let n2 = parseInt(prompt('Digite o segundo numero'))
+        let n3 = parseInt(prompt('Digite o terceiro numero'))
+
+        if(n1 == n2 || n2 == n3 || n3 == n1){
+            console.log('Houve um empate');
+            console.log(Math.max(n1,n2,n3))
+        }else if(n1 > n2 && n1 > n3){
+            console.log(`O maior numero é ${n1}`);
+        }
+        else if(n2 > n3 && n2 > n1){
+            console.log(`O maior numero é ${n2}`);
+        }
+        else if(n3 > n1 && n3 > n2){
+            console.log(`O maior numero é ${n3}`);
+        }
+        
+    </script>
+</body>
+
+</html>
