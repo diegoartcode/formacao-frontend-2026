@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de repetição</title>
+</head>
+
+<body>
+    <script>
+        console.log('Passo 1')
+        console.log('Passo 2')
+        console.log('Passo 3')
+        console.log('Passo 4')
+        console.log('Passo 5')
+        console.log('Passo 6')
+        console.log('Passo 7')
+        console.log('Passo 8')
+        console.log('Passo 9')
+        console.log('Passo 10')
+
+        // for (para)
+
+        // for(inicialização,condição,incremento){
+        //     // codigo a ser repetido
+        // }
+
+        for (let i = 0; i <= 10; i++) { // i = i+1
+            console.log('passo' + i)
+        }
+
+        // fluxo de execução
+        // cria i = 1
+        // verifica se i <=10
+        // executa o bloco
+        // incrementa 1 no i (i++)
+        // volta para a condição
+        // repete até a condição ser falsa
+
+        let numero = 5;
+
+        for (let i = 0; i <= 10; i++) {
+            // console.log(numero + " x " + i + " = " + (numero*i))
+            console.log(`${numero} x ${i} = ${numero * i}`)
+        }
+
+
+        let soma = 0;
+
+        for(let i = 1; i <= 10; i++) {
+            soma += i;  // soma = soma + i;       
+        }
+
+        console.log(soma);
+
+                //      0        1         2       3
+        let nomes = ['Diego', 'Jhenny', 'João', 'Maria','Romeu','Julieta'];
+        console.log(nomes.length)
+
+        for(let i = 0;i < nomes.length; i++){
+            console.log(nomes[i])
+        }
+
+        // exiba os numeros de 1 a 20
+
+        // exiba os numeros de 20 a 1
+    
+        // exiba apenas os numeros pares de 0 a 50
+
+        // entrada de dados pelo usuario 
+        // peça a o usurio um numero e mostre a tabuada deste numero 
+
+        // crie um programa que exiba a seguinte saida 
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+
+
+    </script>
+</body>
+
+</html>

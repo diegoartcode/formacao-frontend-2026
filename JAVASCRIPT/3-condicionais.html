@@ -121,6 +121,63 @@
         else if(n3 > n1 && n3 > n2){
             console.log(`O maior numero é ${n3}`);
         }
+
+
+
+        // switch - case
+
+        var fruta = 'mamão';
+
+        switch(fruta){
+            case 'morango':
+                console.log('Morango!');
+                break;
+            case 'mamão':
+                console.log('Mamão');
+                break;
+            default:
+                console.log('Fruta não encontrada');
+        }
+
+
+        if(fruta == 'morango'){
+            console.log('Morango!');
+        }
+        else if(fruta == 'mamão'){
+            console.log('Mamão');
+        }else{
+            console.log('Fruta não encontrada');
+        }
+
+        dia = new Date().getDay();
+        console.log(dia)
+
+        switch(dia){
+            case 0:
+                console.log('domingo');
+                break;
+            case 1:
+                console.log('segunda-feira');
+                break;
+            case 2:
+                console.log('terça-feira');
+                break;
+            case 3:
+                console.log('quarta-feira');
+                break;
+            case 4:
+                console.log('quinta-feira');
+                break;
+            case 5:
+                console.log('sexta-feira');
+                break;
+            case 6:
+                console.log('sabado');
+                break;
+            default:
+                console.log('Dia não encontrado!')
+        }
+
         
     </script>
 </body>
