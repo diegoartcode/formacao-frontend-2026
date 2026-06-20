@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e Matrizes</title>
+</head>
+
+<body>
+    <script>
+        // Um array é uma estrutura de dados que permite armazenar multiplos valores em uma única variável. Em Javascript, arrays são objetos especiais que armazenam elementos de forma indexa, começando por índice 0.
+
+        //forma de declarar array
+
+        //usando colchetes []
+        //0       1       2       3  
+        let frutas = ['maça', 'banana', 'uva', 'laranja'];
+        console.log(frutas)
+        console.log(frutas[2])
+
+        //usando o construtor Array()
+        //      0       1      2        3
+        let nomes = new Array("Maria", "João", "Romeu", "Julieta");
+        console.log(nomes)
+        console.log(nomes[3])
+
+        //os arrays podem conter diferentes tipos de dados
+        //   0    1       2           3           4
+        let misto = [1, 'Texto', true, { nome: 'Mauro' }, [2, 5, 6]];
+
+
+        console.log(misto[0])
+        console.log(misto[1])
+        console.log(misto[2])
+        console.log(misto[3])
+        console.log(misto[4])
+
+        console.log('--------')
+        console.log(misto[3]['nome'])
+
+        console.log('--------')
+        console.log(misto[4][1])
+
+        // tamanho de um array (length)
+
+        numeros = [25, 3, 6, 8, 465, 100, 0];
+        console.log(numeros);
+        console.log(numeros.length);
+
+        // percorrer array
+        for (let i = 0; i < numeros.length; i++) {
+            console.log(numeros[i])
+        }
+
+        // atividade
+
+        // usuario digita quantos indece ele que no array
+
+        // let tamanho = parseInt(prompt('Quantos elementos voce deseja no array'))
+
+        // let vetor = []
+        // // apos digitar a quantidade de indece o programa pede para informar o valor de cada indece
+
+        // for (let i = 0; i < tamanho; i++) {
+        //     let valor = prompt(`Digite o valor para o indece ${i}: `)
+        //     vetor[i] = valor
+        // }
+
+        // console.log(vetor)
+
+
+        // let indice = parseInt(prompt("Digite quantos índices você quer no array: "));
+        // let valores = [];
+        // for (let i = 0; i < indice; i++) {
+        //     valores[i] = prompt(`Digite o valor para o índice ${i}: `);
+        // }
+        // console.log(valores);
+
+
+        // Uma matriz é um array dentro de um array, permitindo armazenar dados em multiplas dimesões, No javacript uma matriz pode ser representada como um array de arrays
+
+        let pessoas = [
+            ['Fabio', 'Paula'],
+            [42, 25]
+        ]
+
+
+        console.log(pessoas)
+        console.log(pessoas[1][1])
+
+
+        let matriz = [
+            //0 1 2 3 
+            [1, 2, 3, 4], //0
+            [5, 6, 7, 8],  //1
+            [9, 10, 11, 12], //2
+            [13, 14, 15, 16] //3
+        ];
+
+        console.log(matriz[0][0])
+        console.log(matriz[3][1])
+
+        console.log('-------------')
+      
+        for (let linha = 0; linha < matriz.length; linha++) {
+            console.log(linha)
+
+            for(let coluna = 0; coluna < matriz[linha].length;coluna++){
+                console.log(`Elemento [${linha}][${coluna}] = ${matriz[linha][coluna]} `)
+            }
+        }
+    </script>
+</body>
+
+</html>

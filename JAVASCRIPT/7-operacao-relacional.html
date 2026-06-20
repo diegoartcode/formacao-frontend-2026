@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação relacional</title>
+</head>
+<body>
+    <script>
+        // operadores relacionais 
+        // Esses operadores são usados para comparar dois valores e retornar um valor lógico (true / false) (verdadeiro / falso) 
+
+        let num1 = 35;
+        let num2 = 3;
+
+        // igual a (==): verifica se dois valores são iguais
+
+        let igualdade = num1 == num2;
+        console.log(igualdade);
+
+        console.log(5 == '5');// true (o string '5' é convertida para numero 5)
+
+        console.log(true == 1);// true (true é convertido para 1)
+
+        console.log(null == undefined);// true (ambos são considerados iguais em comparação soltas)
+
+        console.log(0 == false);// false (false é convertido para 0)
+
+
+        // igual a (===): Verifica se dois valores são iguais e do mesmo tipo
+
+        let igualdadeValorTipo = num1 === num2;
+        console.log(igualdadeValorTipo)
+
+        console.log(5 === "5") // false (numero != string)
+        console.log(true === 1)// false (booleano != numero)
+        console.log(null === undefined)// false (null != undefined)
+
+        // diferente de (!=): Verifca se dois valores são diferentes
+
+        console.log(5 != "5") // false
+        console.log(true != 1)//false
+
+        // diferente de (!==): Verfica se dois valores são difenrentes e do mesmo tipo
+        console.log(5 !== "5") // true
+        console.log(true !== 1) // true
+
+        //maior que (>): Verifica se um valor é maior que o outro
+        console.log(20>10)// true
+
+        //menor que (<): Verifica se um valor é menor que o outro
+        console.log(20<10)// false
+
+        //maior ou igual a (>=): Verifca se um valor é maior ou igual ao outro
+        console.log(20>=10)// true
+        console.log(10>=10)// true
+        console.log(9>=10)// false
+
+        //menor ou igual a (<=): Verifca se um valor é menor ou igual ao outro
+        console.log(20<=10)// false
+        console.log(10<=10)// true
+        console.log(9<=10)// true
+    </script>
+</body>
+</html>
