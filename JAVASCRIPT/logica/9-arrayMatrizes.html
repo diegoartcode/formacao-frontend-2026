@@ -102,14 +102,67 @@
         console.log(matriz[3][1])
 
         console.log('-------------')
-      
+
         for (let linha = 0; linha < matriz.length; linha++) {
             console.log(linha)
 
-            for(let coluna = 0; coluna < matriz[linha].length;coluna++){
+            for (let coluna = 0; coluna < matriz[linha].length; coluna++) {
                 console.log(`Elemento [${linha}][${coluna}] = ${matriz[linha][coluna]} `)
             }
         }
+
+
+        // Object
+
+        let pessoa = {
+            nome: "Maria",
+            idade: "30"
+        }
+
+        console.log(pessoa['nome']);
+
+
+        pessoas = [
+            { nome: 'Maria', idade: 36 },
+            { nome: 'João', idade: 52 },
+            { nome: 'Romeu', idade: 12 },
+            { nome: 'Julieta', idade: 45 }
+        ];
+
+        console.log(pessoas[2].nome + pessoas[2].idade)
+
+
+        const biblioteca = {
+            nome: 'Biblioteca tito',
+            localizacao: 'São Paulo',
+            livros: [
+                {
+                    titulo: 'Dom Casmurro',
+                    autor: 'Machado de Assis',
+                    generos: ['Romance', 'Drama']
+                },
+                {
+                    titulo: 'O Alquimista',
+                    autor: 'Paulo Coelho',
+                    generos: ['Ficção', 'Autoajuda']
+                },
+                {
+                    titulo: 'Capitães de Areia',
+                    autor: 'Jorge Amado',
+                    generos: ['Drama', 'Aventura']
+                }
+            ]
+        }
+
+        console.log(biblioteca.nome);
+        console.log(biblioteca.nome + biblioteca.livros[1].titulo);
+        console.log(`${biblioteca.nome} ${biblioteca.livros[1].titulo}`);
+        console.log(`Nome da biblioteca: ${biblioteca.nome} Livro: ${biblioteca.livros[1].titulo}`);
+
+        console.log(biblioteca.livros[1].generos[1])
+
+
+
     </script>
 </body>
 
