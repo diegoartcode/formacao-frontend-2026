@@ -30,7 +30,10 @@ console.log(paragrafoLista[3])
 paragrafoLista.forEach(function(item){
     console.log(item)
     console.log(item.textContent)
-})
+});
+
+
+
 
 
 

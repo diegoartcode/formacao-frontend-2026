@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca imagem</title>
+</head>
+<body>
+    <img id="imagem" src="assets/img/cachorro.jpg" alt="cachorro" style="width: 200px;">
+
+    <button id="botao">Próxima imagem</button>
+
+    <script>
+        const imagem = document.querySelector('#imagem');
+        const botao = document.querySelector('#botao');
+
+        // lista com as imagens
+        const imagens = [
+            'assets/img/cachorro.jpg',
+            'assets/img/gato.jpg',            
+            'assets/img/passaro.jpg'            
+        ];
+
+        const alts = [
+            'cachorro',
+            'gato',
+            'passaro'
+        ]
+
+        let indice = 0;
+
+        botao.addEventListener('click', () => {
+            // console.log(imagens)
+            // console.log(indice)
+            indice++;  //indice = indece + 1
+
+            // se chegar ate o final, volte para o primeiro
+            // console.log(imagens.length)
+                         
+            if(indice >= imagens.length){
+                indice = 0
+            }
+
+            imagem.src = imagens[indice]
+            imagem.alt = alts[indice]
+
+
+        })
+
+    
+
+
+
+    </script>
+</body>
+</html>

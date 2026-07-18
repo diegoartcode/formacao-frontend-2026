@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        img{
+            width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        h2{
+            margin: 10px 0;
+        }
+
+        p{
+            width: 400px;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Produtos</h1>
+
+    <h2 id="titulo">Produto 1</h2>
+    <img id="imagem" src="assets/img/cachorro.jpg" alt="cachorro">
+    <p id="descricao">Aqui vai uma descrição</p>
+    
+
+    <button id="botao">Próxima imagem</button>
+
+    <script>
+        const titulo = document.querySelector('#titulo')
+        const imagem = document.querySelector('#imagem');
+        const descricao = document.querySelector('#descricao');
+        const botao = document.querySelector('#botao');
+
+        const produtos = [
+            {
+                src: 'assets/img/cachorro.jpg',
+                alt:   'Produto 1',
+                titulo: 'Produto 1',
+                descricao: 'Aqui vai uma descrição do produto 1'
+            },
+             {
+                src: 'assets/img/gato.jpg',
+                alt:   'Produto 2',
+                titulo: 'Produto 2',
+                descricao: 'Aqui vai uma descrição do produto 2'
+            },
+             {
+                src: 'assets/img/passaro.jpg',
+                alt:   'Produto 3',
+                titulo: 'Produto 3',
+                descricao: 'Aqui vai uma descrição do produto 3'
+            }
+        ]
+
+
+        let indice = 0;
+
+        botao.addEventListener('click', () => {
+        
+            indice++; 
+                         
+            if(indice >= produtos.length){
+                indice = 0
+            }
+
+            imagem.src = produtos[indice].src
+            imagem.alt = produtos[indice].alt
+
+            titulo.textContent = produtos[indice].titulo
+            descricao.textContent = produtos[indice].descricao
+
+
+        })
+
+    
+
+
+
+    </script>
+</body>
+</html>

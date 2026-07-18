@@ -1,0 +1,16 @@
+.destaque{
+    background: yellow;
+    font-weight: bold;
+}
+
+.escondido{
+    display: none;
+}
+
+/* curtir */
+
+.curtido{
+    color: white;
+    background: red;
+    font-weight: bold;
+}
