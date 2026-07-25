@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <h1>Formulário de cadastro</h1>
-    <form id="form-cadastro">
+    <form id="form-cadastro" novalidate>
         <div class="campo">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome">
@@ -43,6 +44,7 @@
         <div class="campo">
             <label for="pais">Pais</label>
             <select name="pais" id="pais">
+                <option value="">Nenhum selecionado</option>
                 <!-- opções serão criadas dinamicamente via javascript -->
             </select>
         </div>
@@ -61,6 +63,7 @@
         <pre id="resumo-conteudo"></pre>
     </div>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
