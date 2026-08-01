@@ -1,0 +1,14 @@
+.claro{
+    background: #fff;
+    color: #000;
+
+}
+.escuro{
+    background: #222;
+    color: #fff;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+}
