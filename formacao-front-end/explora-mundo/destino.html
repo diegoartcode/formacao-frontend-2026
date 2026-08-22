@@ -40,8 +40,8 @@
             </div>
 
             <div class="info-details">
-                <h1>Fernando de Noronha</h1>
-                <p>Noronha é um santuário ecológico com praias mais bonitas do Brasil. Ideal para mergulho e contato com
+                <h1 id="titulo">Fernando de Noronha</h1>
+                <p id="descricao">Noronha é um santuário ecológico com praias mais bonitas do Brasil. Ideal para mergulho e contato com
                     a natureza.</p>
 
             </div>
@@ -97,7 +97,7 @@
         </section>
         <aside class="details-aside">
             <p>Apartir de: </p>
-            <h2>R$ 3.200,00</h2>
+            <h2 id="preco">R$ 3.200,00</h2>
             <div class="details-form">
                 <form action="">
                     <label for="">Viajantes</label>
@@ -132,7 +132,39 @@
             </a>
         </div>
     </footer>
+<script>
 
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id')) || 1;
+
+   
+
+        const destinoInfo = {
+            1: {
+                nome: "Fernando de Noronha",
+                preco: "3.200",
+                img: "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b",
+                descricao: "Noronha é um santuário ecológico com as praias mais bonitas do Brasil. Ideal para mergulho e contato com a natureza."
+            },
+            2: {
+                nome: "Gramado, RS",
+                preco: "1.800",
+                img: "https://images.unsplash.com/photo-1549420556-324c000e4952",
+                descricao: "O charme europeu na Serra Gaúcha. Aproveite o melhor da gastronomia, vinhos e o clima serrano."
+            }
+           
+        };
+
+     const data = destinoInfo[id] || destinoInfo[1];
+
+     console.log(data)
+
+     const titulo = document.getElementById('titulo').innerText = data.nome;
+     const descricao = document.getElementById('descricao').innerText = data.descricao;
+
+     const preco = document.getElementById('preco').innerHTML = data.preco;
+
+</script>
 </body>
 
 </html>
