@@ -136,9 +136,6 @@
 
         const params = new URLSearchParams(window.location.search);
         const id = parseInt(params.get('id')) || 1;
-
-   
-
         const destinoInfo = {
             1: {
                 nome: "Fernando de Noronha",
@@ -156,9 +153,7 @@
         };
 
      const data = destinoInfo[id] || destinoInfo[1];
-
      console.log(data)
-
      const titulo = document.getElementById('titulo').innerText = data.nome;
      const descricao = document.getElementById('descricao').innerText = data.descricao;
 
